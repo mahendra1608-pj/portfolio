@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#070711" />
+  <meta name="description"
+    content="Mahendra Kanth — Software Development Engineer skilled in AI systems, data engineering and full-stack development." />
+  <title>Mahendra Kanth | Software Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div id="loader">
+    <div class="loader-mark">MK<span>_</span></div>
+    <div class="loader-bar"><i></i></div>
+    <small>initializing portfolio...</small>
+  </div>
+
+  <canvas id="space"></canvas>
+  <div class="noise"></div>
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+  <div class="scroll-progress"></div>
+
+  <header class="nav">
+    <a class="logo magnetic" href="#home">MK<span>.</span></a>
+    <nav id="navLinks">
+      <a href="#work">work</a>
+      <a href="#stack">stack</a>
+      <a href="#education">education</a>
+      <a href="#journey">journey</a>
+      <a href="#certifications">certs</a>
+      <a href="#contact">contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button id="themeBtn" class="icon-btn magnetic" aria-label="Change visual theme">◐</button>
+      <button id="menuBtn" class="icon-btn mobile-only">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero section">
+      <div class="hero-copy">
+        <p class="eyebrow reveal">B.TECH CSE · VIT VELLORE · CGPA 8.76</p>
+        <h1 class="glitch-title reveal">
+          <span>SOFTWARE</span>
+          <span class="gradient-text">ENGINEER</span>
+          <span>+ AI BUILDER<span class="blink">_</span></span>
+        </h1>
+        <p class="hero-sub reveal">
+          I’m <strong>Mahendra Kanth</strong> — an SDE who builds
+          <span id="rotatingWord">AI systems</span>, scalable backends and data pipelines.
+        </p>
+        <div class="hero-buttons reveal">
+          <a href="#work" class="btn btn-primary magnetic">Explore my work <span>↗</span></a>
+          <a href="#contact" class="btn btn-ghost magnetic">Let's connect</a>
+        </div>
+        <div class="mini-stats reveal">
+          <div><b>DEV</b><span>Python · Java · React</span></div>
+          <div><b>AI</b><span>ML · LLMs · CV</span></div>
+          <div><b>OPS</b><span>Docker · AWS · CI/CD</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="orbit orbit-a"></div>
+        <div class="orbit orbit-b"></div>
+        <div class="orbit orbit-c"></div>
+        <div class="planet">
+          <div class="planet-core">MK</div>
+          <div class="planet-ring"></div>
+        </div>
+        <div class="floating-card card-a"><span>01</span> BUILD</div>
+        <div class="floating-card card-b"><span>02</span> DEPLOY</div>
+        <div class="floating-card card-c"><span>03</span> SCALE</div>
+        <div class="code-float">
+          <span class="code-green">const</span> future = <span class="code-purple">build</span>(<span
+            class="code-yellow">AI</span>);
+          <br>future.<span class="code-blue">scale</span>();
+          <br>future.<span class="code-pink">secure</span>();
+        </div>
+      </div>
+      <div class="scroll-hint"><span></span> scroll to explore</div>
+    </section>
+
+    <section class="ticker">
+      <div class="ticker-track">
+        <span>PYTHON</span><i>✦</i><span>JAVA</span><i>✦</i><span>REACT</span><i>✦</i><span>REST
+          APIs</span><i>✦</i><span>DOCKER</span><i>✦</i><span>AWS</span><i>✦</i><span>PYTORCH</span><i>✦</i><span>PYSPARK</span><i>✦</i><span>DATABRICKS</span><i>✦</i><span>RAG</span><i>✦</i><span>CI/CD</span><i>✦</i>
+        <span>PYTHON</span><i>✦</i><span>JAVA</span><i>✦</i><span>REACT</span><i>✦</i><span>REST
+          APIs</span><i>✦</i><span>DOCKER</span><i>✦</i><span>AWS</span><i>✦</i><span>PYTORCH</span><i>✦</i><span>PYSPARK</span><i>✦</i><span>DATABRICKS</span><i>✦</i><span>RAG</span><i>✦</i><span>CI/CD</span><i>✦</i>
+      </div>
+    </section>
+
+    <section id="work" class="section work-section">
+      <div class="section-head reveal">
+        <div>
+          <p class="eyebrow">SELECTED WORK</p>
+          <h2>Things I’ve <span class="gradient-text">built.</span></h2>
+        </div>
+        <p class="section-note">Hover, click and explore. Each project is a small engineering story.</p>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card project-featured reveal" data-project="skin">
+          <div class="project-glow"></div>
+          <div class="project-top"><span>01 / AI + HEALTH</span><span>2026</span></div>
+          <div class="project-art skin-art">
+            <div class="scan-line"></div>
+            <div class="retina"></div>
+            <div class="metric">CNN + MLP<br><b>Late Fusion</b></div>
+          </div>
+          <div class="project-content">
+            <h3>Multimodal Skin Cancer Diagnosis</h3>
+            <p>Combining dermoscopic images and clinical symptoms with explainable AI using Grad-CAM + SHAP.</p>
+            <div class="tags"><span>PyTorch</span><span>CNN</span><span>MLP</span><span>XAI</span></div>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-project="rag">
+          <div class="project-top"><span>02 / GEN AI</span><span>2026</span></div>
+          <div class="project-art rag-art">
+            <div class="document">Rx</div>
+            <div class="node n1"></div>
+            <div class="node n2"></div>
+            <div class="node n3"></div>
+            <div class="flow-line l1"></div>
+            <div class="flow-line l2"></div>
+          </div>
+          <div class="project-content">
+            <h3>Prescription RAG Assistant</h3>
+            <p>OCR + retrieval augmented generation pipeline for extracting and answering from handwritten
+              prescriptions.</p>
+            <div class="tags"><span>OCR</span><span>LangChain</span><span>FAISS</span><span>RAG</span></div>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-project="retina">
+          <div class="project-top"><span>03 / DEEP LEARNING</span><span>2025</span></div>
+          <div class="project-art retina-art">
+            <div class="retina-big"></div>
+            <div class="heat h1"></div>
+            <div class="heat h2"></div>
+            <div class="model-chip">ResNet-50</div>
+          </div>
+          <div class="project-content">
+            <h3>Diabetic Retinopathy Detection</h3>
+            <p>Deep learning workflow with augmentation and Grad-CAM to make model predictions more interpretable.</p>
+            <div class="tags"><span>PyTorch</span><span>ResNet-50</span><span>OpenCV</span></div>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-project="foodhack">
+          <div class="project-top"><span>04 / HACKATHON · MERN</span><span>2024</span></div>
+          <div class="project-art mern-art">
+            <div class="mern-logo">🍔</div>
+            <div class="mern-stack">
+              <span class="ms m">M</span><span class="ms e">E</span><span class="ms r">R</span><span
+                class="ms n">N</span>
+            </div>
+            <div class="mern-badge">HACKATHON</div>
+          </div>
+          <div class="project-content">
+            <h3>Food Delivery System</h3>
+            <p>Full-stack food ordering platform built during a hackathon — real-time order tracking, restaurant
+              dashboard and user auth.</p>
+            <div class="tags"><span>MongoDB</span><span>Express</span><span>React</span><span>Node.js</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="stack" class="section stack-section">
+      <div class="section-head reveal">
+        <div>
+          <p class="eyebrow">MY TOOLBOX</p>
+          <h2>A stack with <span class="gradient-text">range.</span></h2>
+        </div>
+      </div>
+      <div class="stack-layout">
+        <div class="stack-orbit reveal">
+          <div class="stack-center">TECH<br><small>ORBIT</small></div>
+          <span class="tech t1">Python</span><span class="tech t2">Java</span><span class="tech t3">React</span>
+          <span class="tech t4">Docker</span><span class="tech t5">AWS</span><span class="tech t6">PyTorch</span>
+          <span class="tech t7">SQL</span><span class="tech t8">REST APIs</span>
+        </div>
+        <div class="stack-copy reveal">
+          <div class="stack-tabs">
+            <button class="active" data-stack="dev">DEV</button>
+            <button data-stack="ai">AI / ML</button>
+            <button data-stack="data">DATA</button>
+            <button data-stack="security">SECURITY</button>
+          </div>
+          <div id="stackPanel" class="stack-panel">
+            <h3>DEV</h3>
+            <p>Full-stack development, APIs and software engineering fundamentals.</p>
+            <div class="skill-bars">
+              <label>Python <i style="--v:92%"></i></label>
+              <label>Java <i style="--v:80%"></i></label>
+              <label>React / HTML / CSS <i style="--v:78%"></i></label>
+              <label>REST APIs / Postman <i style="--v:85%"></i></label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="section education-section">
+      <div class="section-head reveal">
+        <div>
+          <p class="eyebrow">EDUCATION</p>
+          <h2>Academic <span class="gradient-text">background.</span></h2>
+        </div>
+      </div>
+      <div class="edu-grid">
+        <div class="edu-card reveal">
+          <div class="edu-icon">🎓</div>
+          <div class="edu-content">
+            <span class="edu-label">B.Tech — Computer Science &amp; Engineering (Information Security)</span>
+            <h3>VIT Vellore</h3>
+            <p class="edu-score">CGPA: <strong>8.76</strong></p>
+            <p class="edu-year">2022 — 2026</p>
+          </div>
+          <div class="edu-badge">UNDERGRADUATE</div>
+        </div>
+        <div class="edu-card reveal">
+          <div class="edu-icon">📘</div>
+          <div class="edu-content">
+            <span class="edu-label">Class X — SSC</span>
+            <h3>Tirupati</h3>
+            <p class="edu-score">Percentage: <strong>97.3%</strong></p>
+            <p class="edu-year">2020</p>
+          </div>
+          <div class="edu-badge">HIGH SCHOOL</div>
+        </div>
+        <div class="edu-card reveal">
+          <div class="edu-icon">📗</div>
+          <div class="edu-content">
+            <span class="edu-label">Class XII — MPC</span>
+            <h3>Tirupati</h3>
+            <p class="edu-score">Percentage: <strong>90.3%</strong></p>
+            <p class="edu-year">2022</p>
+          </div>
+          <div class="edu-badge">INTERMEDIATE</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="journey" class="section journey-section">
+      <div class="section-head reveal">
+        <div>
+          <p class="eyebrow">JOURNEY</p>
+          <h2>From curiosity to <span class="gradient-text">systems.</span></h2>
+        </div>
+      </div>
+      <div class="timeline">
+        <div class="timeline-line"></div>
+        <article class="timeline-item reveal"><span class="year">2022</span>
+          <div class="timeline-dot"></div>
+          <div>
+            <h3>Started CSE @ VIT Vellore</h3>
+            <p>Built the foundations: DSA, OOP, DBMS, OS, Networks and Security.</p>
+          </div>
+        </article>
+        <article class="timeline-item reveal"><span class="year">2025</span>
+          <div class="timeline-dot"></div>
+          <div>
+            <h3>ML Intern @ CodSoft</h3>
+            <p>Built fraud detection, churn prediction and spam SMS classifiers using Scikit-learn, XGBoost and NLP
+              pipelines.</p>
+          </div>
+        </article>
+        <article class="timeline-item reveal"><span class="year">2025</span>
+          <div class="timeline-dot"></div>
+          <div>
+            <h3>Capstone — Diabetic Retinopathy Detection</h3>
+            <p>ResNet-50 deep learning pipeline with Grad-CAM for clinical interpretability.</p>
+          </div>
+        </article>
+        <article class="timeline-item reveal"><span class="year">2026</span>
+          <div class="timeline-dot"></div>
+          <div>
+            <h3>GenAI + Data Engineering</h3>
+            <p>Built RAG chatbot with LangChain, OCR & FAISS. Architected ETL pipelines on PySpark & Databricks.</p>
+          </div>
+        </article>
+        <article class="timeline-item reveal"><span class="year">NOW</span>
+          <div class="timeline-dot"></div>
+          <div>
+            <h3>Shipping production software</h3>
+            <p>Applying software engineering principles to build robust, scalable AI-powered systems.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="certifications" class="section cert-section">
+      <div class="section-head reveal">
+        <div>
+          <p class="eyebrow">CERTIFICATIONS</p>
+          <h2>Verified <span class="gradient-text">credentials.</span></h2>
+        </div>
+      </div>
+      <div class="cert-grid">
+        <div class="cert-card reveal">
+          <div class="cert-icon">🛡️</div>
+          <div class="cert-body">
+            <p class="cert-issuer">EC-COUNCIL</p>
+            <h3>Certified Ethical Hacker</h3>
+            <p class="cert-sub">CEH · Penetration Testing &amp; Vulnerability Assessment</p>
+          </div>
+          <div class="cert-glow"></div>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-icon">☁️</div>
+          <div class="cert-body">
+            <p class="cert-issuer">ORACLE</p>
+            <h3>OCI AI Foundation Associate</h3>
+            <p class="cert-sub">Oracle Cloud Infrastructure · AI &amp; Machine Learning</p>
+          </div>
+          <div class="cert-glow"></div>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-icon">🗄️</div>
+          <div class="cert-body">
+            <p class="cert-issuer">COUCHD</p>
+            <h3>Distributed Database Systems</h3>
+            <p class="cert-sub">Distributed Architecture · NoSQL · CouchDB</p>
+          </div>
+          <div class="cert-glow"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="terminal-section section">
+      <div class="terminal reveal">
+        <div class="terminal-head"><span class="traffic red"></span><span class="traffic yellow"></span><span
+            class="traffic green"></span><b>mahendra@portfolio:~</b></div>
+        <div id="terminalOutput">
+          <div><span class="green">visitor@portfolio</span>:~$ <span>help</span></div>
+          <p>Try: <b>about</b> · <b>skills</b> · <b>projects</b> · <b>contact</b> · <b>clear</b></p>
+        </div>
+        <div class="terminal-input"><span>visitor@portfolio:~$</span><input id="terminalInput" autocomplete="off"
+            spellcheck="false" placeholder="type a command..." /></div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="contact-card reveal">
+        <div class="contact-orb"></div>
+        <h2>Let’s build something<br><span class="gradient-text">worth shipping.</span></h2>
+        <p>Software Engineering · AI Systems · Data · Security</p>
+        <div class="contact-actions">
+          <a class="btn btn-primary magnetic" href="mailto:your-email@example.com">Email me ↗</a>
+          <a class="btn btn-ghost magnetic" href="https://github.com/YOUR_USERNAME" target="_blank">GitHub ↗</a>
+          <a class="btn btn-ghost magnetic" href="https://www.linkedin.com/in/YOUR_LINKEDIN/" target="_blank">LinkedIn
+            ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><span>© 2026 Mahendra Kanth</span><span>DESIGNED + CODED WITH CURIOSITY ✦</span></footer>
+
+  <div id="projectModal" class="modal">
+    <div class="modal-box">
+      <button class="modal-close">×</button>
+      <p class="eyebrow" id="modalKicker">PROJECT</p>
+      <h2 id="modalTitle"></h2>
+      <p id="modalText"></p>
+      <div id="modalTags" class="tags"></div>
+      <div class="modal-links">
+        <a id="modalGithub" class="btn btn-primary" target="_blank">View on GitHub ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
